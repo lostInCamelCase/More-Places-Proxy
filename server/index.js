@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 //More Places
 app.get('/properties', (req, res) => {
-  axios.get(`http://localhost:8080/properties/`)
+  axios.get(`http://54.215.232.135/properties/`)
     .then((response) => {
       res.status(200).send(response.data);
     })
@@ -20,7 +20,7 @@ app.get('/properties', (req, res) => {
 });
 
 app.get('/lists', (req, res) => {
-  axios.get(`http://localhost:8080/lists/`)
+  axios.get(`http://54.215.232.135/lists/`)
     .then((response) => {
       res.status(200).send(response.data);
     })
@@ -31,7 +31,7 @@ app.get('/lists', (req, res) => {
 
 //Gallery
 app.get('/stay', (req, res) => {
-  axios.get(`http://localhost:3009/lists/`)
+  axios.get(`http://3.101.80.128/stay/`)
     .then((response) => {
       res.status(200).send(response.data);
     })
@@ -41,7 +41,7 @@ app.get('/stay', (req, res) => {
 });
 
 app.get('/stay/ratings', (req, res) => {
-  axios.get(`http://localhost:3009/stay/ratings`)
+  axios.get(`http://3.101.80.128/stay/ratings`)
     .then((response) => {
       res.status(200).send(response.data);
     })
@@ -51,7 +51,7 @@ app.get('/stay/ratings', (req, res) => {
 });
 
 app.get('/stay/pictures', (req, res) => {
-  axios.get(`http://localhost:3009/stay/pictures`)
+  axios.get(`http://3.101.80.128/stay/pictures`)
     .then((response) => {
       res.status(200).send(response.data);
     })
@@ -62,7 +62,7 @@ app.get('/stay/pictures', (req, res) => {
 
 //Calendar
 app.get('/rentalpricing', (req, res) => {
-  axios.get(`http://localhost:3011/stay/pictures`)
+  axios.get(`http://34.211.141.231/rentalpricing`)
     .then((response) => {
       res.status(200).send(response.data);
     })
@@ -71,7 +71,7 @@ app.get('/rentalpricing', (req, res) => {
     });
 })
 
-const port = 1000;
+const port = 3000;
 app.listen(port, () => {
   console.log(`App listening at http://localhost:${port}`);
 })

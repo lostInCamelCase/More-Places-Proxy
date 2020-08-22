@@ -1,0 +1,21 @@
+.topbar {
+  width: 100%;
+  height: 5%;
+}
+
+.middle {
+  margin-left: 130px;
+  width: 50%;
+  height: 20%;
+}
+
+.bottom {
+  width: 80%;
+  height: 20%;
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
+.gal {
+  margin-left:-8%;
+}
